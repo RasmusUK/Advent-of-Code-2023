@@ -9,7 +9,6 @@ public class Reader
         {
             var directory = @$"Days\Day{day}";
             var filePath = Path.Combine(_pathRootFolder, directory, fileName);
-            Console.WriteLine(filePath);
             return File.ReadAllLines(filePath);
         }
         catch (Exception ex)
