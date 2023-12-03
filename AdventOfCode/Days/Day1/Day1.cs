@@ -10,7 +10,7 @@ public class Day1 : Day
     {
     }
 
-    protected override object Part1(IEnumerable<string> input)
+    protected override object Part1(List<string> input)
     {
         return input.Sum(line =>
         {
@@ -19,7 +19,7 @@ public class Day1 : Day
         });
     }
 
-    protected override object Part2(IEnumerable<string> input)
+    protected override object Part2(List<string> input)
     {
         return input.Sum(line => SumLine(line));
     }

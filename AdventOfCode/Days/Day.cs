@@ -2,9 +2,9 @@ namespace AdventOfCode.Days;
 
 public abstract class Day
 {
-    private readonly IEnumerable<string> _example1;
-    private readonly IEnumerable<string> _example2;
-    private readonly IEnumerable<string> _input;
+    private readonly List<string> _example1;
+    private readonly List<string> _example2;
+    private readonly List<string> _input;
     
     protected Day(int day)
     {
@@ -20,11 +20,11 @@ public abstract class Day
                           $"Part2 (example / input): ({Part2(_example2)} / {Part2(_input)})");
     }
 
-    protected abstract object Part1(IEnumerable<string> input);
+    protected abstract object Part1(List<string> input);
 
-    protected abstract object Part2(IEnumerable<string> input);
+    protected abstract object Part2(List<string> input);
 
-    protected void PrintDebug(IEnumerable<string> list)
+    protected void PrintDebug(List<string> list)
     {
         foreach (var line in list)
         {

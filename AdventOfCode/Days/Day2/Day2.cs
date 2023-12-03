@@ -10,7 +10,7 @@ public class Day2 : Day
     {
     }
 
-    protected override object Part1(IEnumerable<string> input)
+    protected override object Part1(List<string> input)
     {
         var idSum = 0;
 
@@ -24,7 +24,7 @@ public class Day2 : Day
         return idSum;
     }
 
-    protected override object Part2(IEnumerable<string> input)
+    protected override object Part2(List<string> input)
     {
         return input.Select(line => GetMultiplyCubesForCubes(line.Split(":")[1])).Sum();
     }
